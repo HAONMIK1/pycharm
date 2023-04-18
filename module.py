@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import math
 
-def calculate_rotation_angle(current_angle, target_angle):
+def calculate_rotation_angle(current_angle: object, target_angle: object) -> object:
     """
     현재 각도와 쳐다봐야 할 각도가 주어졌을 때, 회전해야 하는 각도를 계산하는 함수
 
@@ -38,7 +38,7 @@ def get_angle(start_x, start_y, target_x, target_y):
     # atan2의 결과는 -pi부터 pi 사이의 값이므로, 각도를 0부터 360도 사이의 값으로 변환
     angle_deg = (angle_deg + 360) % 360
     # 0도가 북쪽이라고 가정하므로, 동쪽일 경우 90도로 변환
-    angle_deg = (angle_deg + 90) % 360
+    angle_deg = int(angle_deg + 90) % 360
 
     return angle_deg
 

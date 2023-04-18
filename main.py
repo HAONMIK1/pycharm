@@ -1,35 +1,6 @@
-import my
-import guri
-import cv2
-#1.전산관
-image_path = "lo1.jpg"
+from main2 import *
+from vodeo import *
 
-my.my(image_path)
-
-if cv2.waitKey(0) & 0xFF == ord('q'):
-    cv2.destroyAllWindows()
-
-guri.go(image_path)
-
-
-# #2.도사관
-# image_path = "lo2.jpg"
-#
-# ex1.my(image_path)
-#
-# if cv2.waitKey(0) & 0xFF == ord('q'):
-#     cv2.destroyAllWindows()
-#
-# guri.go(image_path)
-#
-# #3.분수대
-# image_path = "lo4.jpg"
-#
-# ex1.my(image_path)
-#
-# if cv2.waitKey(0) & 0xFF == ord('q'):
-#     cv2.destroyAllWindows()
-#
-# guri.go(image_path)
-#
-#
+one= "lo1.JPG"
+go(one,160)
+play_video(0,13)
